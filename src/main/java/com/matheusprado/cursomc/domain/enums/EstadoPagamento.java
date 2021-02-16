@@ -1,12 +1,11 @@
 package com.matheusprado.cursomc.domain.enums;
 
 public enum EstadoPagamento {
-
+	
 	PENDENTE(1, "Pendente"),
 	QUITADO(2, "Quitado"),
 	CANCELADO(3, "Cancelado");
 	
-
 	private int cod;
 	private String descricao;
 	
@@ -18,11 +17,12 @@ public enum EstadoPagamento {
 	public int getCod() {
 		return cod;
 	}
-	public String descricao() {
+	
+	public String getDescricao() {
 		return descricao;
 	}
 	
-	public static EstadoPagamento toEnum(Integer cod) throws IllegalAccessException {
+	public static EstadoPagamento toEnum(Integer cod) {
 		
 		if (cod == null) {
 			return null;
@@ -34,6 +34,7 @@ public enum EstadoPagamento {
 			}
 		}
 		
-		throw new IllegalAccessException("Id inválido: " + cod);
+		throw new IllegalArgumentException("Id inválido: " + cod);
 	}
+
 }
