@@ -1,6 +1,8 @@
-package com.matheusprado.cursomc.domain;
+package com.matheusprado.cursomc.dto;
 
 import java.io.Serializable;
+
+import com.matheusprado.cursomc.domain.Estado;
 
 public class EstadoDTO implements Serializable {
 	private static final long serialVersionUID = 1L;

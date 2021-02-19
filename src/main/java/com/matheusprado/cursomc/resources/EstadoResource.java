@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.matheusprado.cursomc.domain.Cidade;
 import com.matheusprado.cursomc.domain.Estado;
-import com.matheusprado.cursomc.domain.EstadoDTO;
 import com.matheusprado.cursomc.dto.CidadeDTO;
+import com.matheusprado.cursomc.dto.EstadoDTO;
 import com.matheusprado.cursomc.services.CidadeService;
 import com.matheusprado.cursomc.services.EstadoService;
 
